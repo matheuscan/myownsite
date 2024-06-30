@@ -1,6 +1,11 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+
+function onMenuClick(e){
+	e.preventDefault();
+
+}
 ---
 
 <header>
@@ -26,6 +31,9 @@ import { SITE_TITLE } from '../consts';
 				>
 			</a>
 		</div>
+		<button>
+			<img src="/hamburger-menu-icon.png"/>
+		</button>
 	</nav>
 </header>
 <style>
@@ -67,12 +75,20 @@ import { SITE_TITLE } from '../consts';
 		display: flex;
 	}
 	@media (max-width: 720px) {
-		.social-links {
+		.social-links, .internal-links {
 			display: none;
 		}
+		button img {
+			display: inherit;
 	}
-	.ico {
+	}
+	.ico, button > img {
 			width: 32px;
 			height:32px;
 		}
+	button img {
+		display: none;
+	}
+
+
 </style>
