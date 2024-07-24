@@ -1,3 +1,51 @@
-.wrapper {
-    background-color: rgba(200,200,170,0.84);
+.home-top h2 {
+    font-size: 60px;
+    padding-top: 5rem;
+}
+.home-top {
+    display: flex;
+    justify-content: center;
+}
+.h2separator{
+    width: 8rem;
+    background-color: black;
+    height: .2rem;
+}
+.home-cv {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5rem;
+}
+.about-cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+    margin-top: 20px;
+}
+.info-card {
+    max-width: 50vw;
+}
+.about-card {
+    padding: 30px;
+    box-sizing: content-box;
+    color:white;
+    border-radius: 1rem;
+}
+#academics {
+    background: linear-gradient(rgb(19, 15, 15), black);
+}
+#expertise {
+    background: linear-gradient(rgb(189, 148, 38),rgb(199, 172, 98));
+}
+#hobbies {
+    background: linear-gradient(rgb(75, 55, 14),rgb(199, 172, 98));
+}
+.self-picture {
+    width: 15rem;
+    height: 15rem;
+    position:sticky;
+    border: 1px solid black;
+    border-radius: 50%;
 }
