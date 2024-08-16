@@ -1,10 +1,21 @@
-.home-top h2 {
-    font-size: 60px;
-    padding-top: 5rem;
-}
 .home-top {
-    display: flex;
-    justify-content: center;
+    height: 220px;
+}
+.presentation h2 {
+    font-size: 60px;
+    opacity: .8;
+}
+
+.presentation {
+    width: 60%;
+    position: relative;
+    left: 15%;
+    top: 25%;
+}
+.presentation span {
+    position: relative;
+    top: -35px;
+    left: 20px;
 }
 .h2separator{
     width: 8rem;
@@ -32,7 +43,18 @@
     box-sizing: content-box;
     color:white;
     border-radius: 1rem;
+    
 }
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*
 #academics {
     background: linear-gradient(rgb(19, 15, 15), black);
 }
@@ -42,10 +64,32 @@
 #hobbies {
     background: linear-gradient(rgb(75, 55, 14),rgb(199, 172, 98));
 }
+    */
 .self-picture {
     width: 15rem;
     height: 15rem;
     position:sticky;
     border: 1px solid black;
     border-radius: 50%;
+}
+.links-container a {
+    text-decoration: none;
+    color: white;
+    opacity: .8;
+}
+@media (width < 720px) {
+    .home-top h2 {
+        font-size: 30px;
+    }
+    .home-top {
+        justify-content: center;
+    }
+    .presentation {
+        width: 80%;
+        left: 5%;
+    }
+    .presentation span {
+        left: 1px;
+        top: 1px;
+    }
 }

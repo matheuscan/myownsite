@@ -12,13 +12,72 @@ nav ul {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    color:rgba(39, 38, 38, 0.87)
+    color: white;
 }
 #brand {
     text-decoration: none;
     font-size: 24px;
     font-family: 'Roboto Mono';
     font-weight: 500;
-    color:rgba(39, 38, 38, 0.87);
+    color:white;
+}
+#btnNav {
+    display: none;
 }
 
+@media (width < 720px) {
+    #brand {
+        font-size: 22px;
+    }
+    nav ul,.logos-container {
+        display: none;
+    }
+    #btnNav {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    #btnNav:hover {
+        animation: fade 2.5s;
+    }
+}
+.offcanvas,.disappear {
+    display: none;
+}
+
+.offcanvas-clicked {
+    width: 100vw;
+    height: 100vh;
+    margin-right: 350px;
+    display: flex;
+    margin-top: auto;
+    z-index: 2;
+}
+.links-container {
+    column-gap: 2rem;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+}
+.links-container div {
+    display: flex;
+    margin-top: 1rem;
+}
+@keyframes fade {
+    25% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .7;
+    }
+    100% {
+        opacity: .9;
+    }
+}
