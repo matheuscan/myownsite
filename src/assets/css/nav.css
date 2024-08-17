@@ -50,18 +50,35 @@ nav ul {
 }
 
 .offcanvas-clicked {
+    position: absolute;
+    top: 0%;
+    left:0%;
     width: 100vw;
     height: 100vh;
-    margin-right: 350px;
-    display: flex;
+    display: block;
     margin-top: auto;
     z-index: 2;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+#btnClose {
+    margin-right: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#btnClose img {
+    width: 32px;
+    height: 32px;
 }
 .links-container {
     column-gap: 2rem;
     margin-top: 48px;
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
+}
+.links-container a {
+    margin-left:1rem;
 }
 .links-container div {
     display: flex;
