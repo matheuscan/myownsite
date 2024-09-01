@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 
 const Nav = () => {
-    const [state,setState] =useState("offcanvas")
+    
     let [visible, setVisible] = useState(false)
     
 
