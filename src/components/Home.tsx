@@ -9,10 +9,11 @@ const Home = () => {
                     <span>Software developer specialized in Backend.</span>
                </div>
             </div>
-            <div className="home-section">
-                
-                
-            </div>
+            <main>
+                <section className='about'>
+                    <h3>About Me</h3>
+                </section>
+            </main>
         </>
     )
 }
